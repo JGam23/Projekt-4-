@@ -16,7 +16,6 @@ h1 {
   height: 50px;
   line-height: 50px; 
   position: fixed;
-  top: auto;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -47,7 +46,6 @@ h1 {
   color: #fff;
   font-size: 20px;
   margin-bottom: 100px;
-  z-index: 100;
 }
 
 .circle {
@@ -136,13 +134,13 @@ h1 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 50px;
-  margin-bottom: 75px;
+  margin-top: 100px;
 }
 .text {
-  width: 80%; 
-  text-align: left; 
+  width: 80%; /* Justerer bredden efter behov */
+  text-align: left; /* Placering af tekst til venstre */
 }
+
 
 .box2 {
   width: 90%;
@@ -160,69 +158,37 @@ h1 {
   height: 100%;
   object-fit: cover; /* Til at skalere billedet, så det passer til boksen uden at miste proportioner */
   border-radius: 10px;
-  opacity: 0.5;
 }
 
-progress[value] {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 20px;
+
+/* Shoppen */
+
+.scroll-container-shop {
+  overflow: auto;
+  white-space: nowrap;
+
+}
+
+.scroll-container-shop img {
   width: 300px;
-  margin-top: 50px;
-  border-radius: 10px;
-  background-color: #fff;
+  height: 250px; 
+  margin-left: 5px;
+  border-radius: 5px;
 }
 
-progress[value]::-webkit-progress-value {
-  background: #D5802D; /* Farven for den fyldte del af progress baren */
-  border-radius: 10px;
+.tekst-donation {
+  margin-top: 100px;
+  margin-left: 5px;
+  font-size: 15px;
 }
 
-progress[value]::-webkit-progress-bar {
-  background-color: #fff;
-  border-radius: 10px;
+hr.streg{
+  border: 0.5px solid black;
+  margin-left: 5px;
 }
 
-progress[value]::-moz-progress-bar {
-  background: #D5802D; /* Farven for den fyldte del af progress baren (for Firefox) */
-  border-radius: 10px;
+.tekst-shop {
+  margin-top: 20px;
+  margin-left: 5px;
+  font-size: 15px;
 }
-
-progress[value]::after {
-  content: attr(value) '%'; /* Indsæt procentdelen som indhold */
-  position: absolute;
-  top: 50%;
-  left: 30px;
-  transform: translate(-50%, -50%);
-  color: white; /* Farven på teksten */
-  font-weight:bold;
-}
-
-.round-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px; 
-  height: 50px; 
-  border-radius: 50%; 
-  overflow: hidden; /* Skjuler eventuelt overskydende indhold */
-  position: fixed;
-  bottom: 70px;
-  right: 20px;
-  background-color: #fff;
-}
-
-.round-button img {
-  max-width: 40px; 
-  max-height: 40px;
-  width: auto;
-  height: auto;
-}
-
-
-
-
-
-  
- 
