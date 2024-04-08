@@ -16,6 +16,7 @@ h1 {
   height: 50px;
   line-height: 50px; 
   position: fixed;
+  top: auto;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -46,6 +47,7 @@ h1 {
   color: #fff;
   font-size: 20px;
   margin-bottom: 100px;
+  z-index: 100;
 }
 
 .circle {
@@ -134,13 +136,13 @@ h1 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 100px;
+  margin-top: 50px;
+  margin-bottom: 75px;
 }
 .text {
-  width: 80%; /* Justerer bredden efter behov */
-  text-align: left; /* Placering af tekst til venstre */
+  width: 80%; 
+  text-align: left; 
 }
-
 
 .box2 {
   width: 90%;
@@ -158,7 +160,46 @@ h1 {
   height: 100%;
   object-fit: cover; /* Til at skalere billedet, så det passer til boksen uden at miste proportioner */
   border-radius: 10px;
+  opacity: 0.5;
 }
+
+progress[value] {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 20px;
+  width: 300px;
+  margin-top: 50px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+progress[value]::-webkit-progress-value {
+  background: #D5802D; /* Farven for den fyldte del af progress baren */
+  border-radius: 10px;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+progress[value]::-moz-progress-bar {
+  background: #D5802D; /* Farven for den fyldte del af progress baren (for Firefox) */
+  border-radius: 10px;
+}
+
+progress[value]::after {
+  content: attr(value) '%'; /* Indsæt procentdelen som indhold */
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translate(-50%, -50%);
+  color: white; /* Farven på teksten */
+  font-weight:bold;
+}
+
+
 
 
 
