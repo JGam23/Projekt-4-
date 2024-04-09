@@ -357,7 +357,7 @@ h1 {
 }
 
 .background-image {
-  width: 300px;
+  width: auto;
   height: 200px;
   border-radius: 5px;
   margin-left: 5px;
@@ -374,26 +374,26 @@ h1 {
 
 .title-shop {
   margin-top: 20px;
-  font-size: 18px;
-  color: white; 
-  position: absolute;
-  bottom: 25px; 
-  left: 0;
-  width: 100%;
-  text-align: left;
-  padding: 0 70px; 
-}
-
-.side-text-shop {
-  margin-top: 20px;
   font-size: 15px;
   color: white; 
   position: absolute;
-  bottom: 5px; 
+  bottom: 22px; 
   left: 0;
   width: 100%;
   text-align: left;
-  padding: 0 70px; 
+  padding: 0 60px; 
+}
+
+.side-text-shop {
+  margin-top: 2px;
+  font-size: 10px;
+  color: white; 
+  position: absolute;
+  bottom: 15px; 
+  left: 0;
+  width: 100%;
+  text-align: left;
+  padding: 0 60px; 
 }
 
 .image-container-shop {
@@ -401,11 +401,12 @@ h1 {
   position: absolute;
   top: 0;
   right: 10px;
-  width: 50px; 
-  height: 30px; 
+  width: 35px; 
+  height: 20px; 
   background-color: white; 
   box-sizing: border-box; 
   border-radius: 15px;
+  border: 1px solid #D5802D;
 }
 
 .image-container-shop img{
@@ -419,22 +420,21 @@ h1 {
 }
 
 .point-box img {
-  width: 20px;
-  height: 20px;
-  margin-left: 5px;
-  margin-top: 5px;
-
+  width: 12px;
+  height: 12px;
+  margin-left: 4px;
+  margin-top: 3px;
 }
 
 .point-text {
-  margin-left: 5px; 
-  font-size: 10px;
-  margin-top: 5px;
+  margin-left: 3px; 
+  font-size: 8px;
+  margin-top: 3px;
 }
 
 
 .logoer {
-  margin-top: 10px;
+  margin-top: 5px;
   position: absolute;
   bottom: 20px;
   left: 0;
@@ -445,16 +445,16 @@ h1 {
   position: absolute;
   bottom: 0;
   left: 15px;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background-color: white;
   border-radius: 50%;
   overflow: hidden; 
 }
 
 .rounded-box img {
-  width: 80%;
-  height: 80%;
+  width: 70%;
+  height: 70%;
   margin-top: 5px;
   object-fit: cover; 
 } 
