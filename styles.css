@@ -162,23 +162,187 @@ h1 {
 
 
 
-/* Shoppen */
+/* SHOPPEN UNDER SIDE*/
 
+.toppen {
+  display: flex;
+  justify-content: space-between; /* Placerer elementerne i header i hver sin side */
+  align-items: center;
+}
+
+
+/* Saldo i toppen */
+
+.containersaldo {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: 5px;
+}
+
+.saldo {
+  margin-right: 5px;
+  font-size: 12px;
+  color: #707070;
+}
+
+.saldopoint {
+  display: flex;
+  align-items: center;
+}
+
+.saldopoint img {
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+}
+
+.point {
+  margin: 0;
+  font-size: 12px;
+  color: #707070;
+}
+
+/* Shopping */
+
+.shopping {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 5px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+}
+
+.action {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  width: 40px;
+  height: 30px;
+  margin-top: 70px;
+}
+
+.ordretekst{
+  margin: 0;
+  font-size: 12px;
+  color: #707070;
+}
+
+.farvortitekst{
+  margin: 0;
+  font-size: 12px;
+  color: #707070;
+}
+
+
+
+
+/* Dropdown kategorier */
+
+.containerdrop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.dropbtn {
+  background-color: #ffffff;
+  color: #707070;
+  padding: 15px;
+  font-size: 12px;
+  border: 1px solid black;
+  cursor: pointer;
+  width: 300px; 
+  height: 8px;
+  display: flex; 
+  align-items: center;
+  border-radius: 5px;
+  text-align: left;
+ 
+}
+
+.dropbtn::after {
+  content: "▼"; 
+  margin-left: 235px; 
+  color: #707070; 
+}
+
+.dropdown {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: #ffffff;
+  min-width: 300px;
+  box-shadow: 0px 10px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  position: absolute;
+  top: 100%;
+  border-radius: 5px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 12px;
+}
+
+.dropdown-content a:hover {color: #D5802D;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #D5802D;
+  color: black;
+}
+
+.dropbtn:hover::after {
+  color: black; 
+}
+
+.kategori {
+  margin-bottom: 8px;
+  margin-right: 230px;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.mulighed {
+  margin-right: 235px;
+  margin-top: 5px;
+  font-size: 12px;
+  color: #707070;
+}
+
+/* Billede galleri - slide */
 
 .tekst-donation{
   margin-left: 5px;
-  margin-top: 80px;
-  margin-bottom: 0; /* Fjern bundmargen */
+  margin-top: 20px;
+  font-size: 15px;
 }
 
 .tekst-shop{
   margin-left: 5px;
-}
-
-.streg{
-  margin-left: 5px;
-  border: 0.5px solid black; /* Tilføj en streg */
-  margin-top: -15px;
+  font-size: 15px;
 }
 
 
@@ -194,7 +358,7 @@ h1 {
 
 .background-image {
   width: 300px;
-  height: 250px;
+  height: 200px;
   border-radius: 5px;
   margin-left: 5px;
 }
