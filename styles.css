@@ -332,6 +332,15 @@ h1 {
   color: #707070;
 }
 
+.dropdown a:hover 
+{background-color: #ffffff;
+}
+
+.show 
+{display: block;
+}
+
+
 /* Billede galleri - slide */
 
 .tekst-donation{

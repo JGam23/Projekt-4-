@@ -6,6 +6,7 @@
         <meta name="viewport" content="max-width: 500px , initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
         
+        
 
     </head>
 
@@ -16,7 +17,9 @@
     </header>
 
     <body>
-        <!-- Sald, kurve og favorit -->
+        <script src="dropdown.js"></script>
+
+        <!-- Saldo, kurve og favorit -->
         <div class="toppen">
             <div class="containersaldo">
               <p class="saldo">Saldo</p>
@@ -48,8 +51,8 @@
         <div class="containerdrop">
             <h2 class="kategori">Kategorier</h2>
             <div class="dropdown">
-              <button class="dropbtn">Alle</button>
-              <div class="dropdown-content">
+              <button onclick="myFunction()" class="dropbtn">Alle</button>
+              <div id="myDropdown" class="dropdown-content">
               <a href="#">Greenpeace</a>
               <a href="#">Oceans2clean</a>
               <a href="#">WWF</a>
@@ -68,6 +71,8 @@
             </div>
             <p class="mulighed">8 muligheder</p>
         </div>
+
+        
 
         <!-- Donation galleri -->
         <div class="tekst-donation">
