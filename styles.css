@@ -303,7 +303,205 @@ progress[value]::after {
   background-color: #CC6A00; /* Mørkere orange ved hover */
 }
 
+.Pcontainer {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
 
+.profile-info {
+  display: flex;
+  align-items: center;
+  flex-direction: column; /* Juster indholdets retning til kolonne */
+  text-align: center; /* Centrer indholdet */
+}
+
+.profile-details {
+  margin-top: 10px; /* Afstand mellem profilbillede og profiloplysninger */
+}
+
+.horizontal-line {
+  width: 80%; /* Juster bredden efter behov */
+  margin: 10px auto; /* Centrer vandret linje og tilføj lidt afstand over og under */
+  border: none;
+  border-top: 1px solid #ddd; /* Stil og farve af vandret linje */
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.profile-name {
+  font-size: 40px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.valuta-container {
+  display: inline-block; /* Gør valuta-containeren til en inline-block for at placere det på samme linje */
+  margin-right: 5px; /* Tilføj lidt afstand mellem valuta-container og fly-ikon */
+}
+
+.fly-ikon {
+  font-size: 20px; /* Juster størrelsen af fly-ikonet efter behov */
+  vertical-align: middle; /* Juster lodret placering af fly-ikonet */
+}
+.valuta-container img {
+  vertical-align: middle; /* Linjer billedet med teksten */
+  width: 20px; /* Billedets bredde */
+}
+.valuta-container .mønt-tæller {
+  font-family: acumin-pro-extra-condensed, sans-serif;
+  font-weight: bold; /* Fed skrift for møntantal */
+}
+
+
+.streaks-box {
+  position: relative; /* Gør det muligt at positionere streak-counter absolut */
+  margin-top: 10px;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.streak-counter {
+  position: absolute;
+  top: 20px ;
+  right: 20px;
+  display: flex; /* Ændret til flex */
+  align-items: center; /* Juster lodret justering til bunden */
+}
+
+.streak-number {
+  font-size: 4em;
+  color: #000000;
+  margin-right: 10px;
+}
+  
+.flame-icon {
+   color: orange;
+  font-size: 4em;
+}
+
+.streaks-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Sørger for at indholdet fylder boksen vertikalt */
+}
+
+
+.streaks-box h2 {
+  margin-bottom: 10px;
+  font-family: acumin-pro-extra-condensed, sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+
+.streaks-table {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-around; 
+  flex-wrap: wrap;
+}
+
+.streaks-table th,
+.streaks-table td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  margin-bottom: 10px; 
+}
+
+.monday, .tuesday, .wednesday, .thursday {
+  background-color: orange;
+  color: white;
+}
+
+.friday, .saturday, .sunday {
+  background-color: white;
+  color: black;
+}
+
+.streaks-text {
+  font-size: 14px;
+  color: #000000;
+  text-align: center; 
+  margin-top: 10px; 
+}
+
+.trophy-title {
+  text-align: center;
+  margin-top: 20px; 
+}
+
+.trophy-title h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.trofae-container {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.trofae-ikon {
+  width: 50px; /* Juster størrelsen efter behov */
+  height: auto;
+}
+
+.trofae-ikon img {
+  width: 100%; /* Fylder hele pladsen i .trofae-ikon containeren */
+  height: auto;
+}
+
+
+.trofae-titel {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.trofae-beskrivelse {
+  font-size: 14px;
+}
+
+.fremskridtslinje-container {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  display: flex;
+}
+
+.fremskridtslinje {
+  height: 10px;
+  width: 80%;
+  background-color: #D5802D;
+  border-radius: 5px;
+  margin: auto 0px;
+  margin-right: auto;
+}
+
+.fremskridtslinje span {
+  position: absolute; /* Absolut position for at placere span inden i linjen */
+  right: 5px; /* Afstand til højre for linjen */
+  top: 50%; /* Centrerer vertikalt */
+  transform: translateY(-50%); /* Justerer position baseret på linjens højde */  
+  margin: auto; 
+}
 
 
 
