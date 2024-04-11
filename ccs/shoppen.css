@@ -109,11 +109,11 @@
   
   .dropbtn::after {
     content: "▼"; 
-    margin-left: 5px; /* Juster pilen til at være tættere på teksten */
-    position: absolute; /* Gør pilen absolut inden for knappens område */
-    top: 50%; /* Centrer pilen lodret */
-    transform: translateY(-50%); /* Juster pilen til at være lodret centreret */
-    right: 10px; /* Juster pilens afstand fra højre kant af knappen */
+    margin-left: 5px; 
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    right: 10px; 
     color: #707070; 
   }
   
@@ -317,3 +317,4 @@
     margin-left: 1px;
     object-fit: cover; 
   } 
+
