@@ -1,25 +1,24 @@
-// Funktion til at håndtere klik på dropdown-knappen
 function dropdownKategori() {
   let dropdown = document.getElementById("myDropdown");
   dropdown.classList.toggle("show");
   let dropdownButton = document.getElementById('dropdownButton');
   if (dropdown.classList.contains("show")) {
-      dropdownButton.style.backgroundColor = "#D5802D"; // Ændrer baggrundsfarven til orange
+      dropdownButton.style.backgroundColor = "#D5802D"; 
   } else {
-      dropdownButton.style.backgroundColor = "#ffffff"; // Ændrer baggrundsfarven til hvid, når dropdown'en lukkes
+      dropdownButton.style.backgroundColor = "#ffffff"; 
   }
 }
 
-// Funktion til at håndtere valg af kategori og opdatering af knaptekst samt lukning af dropdown
+
 function valgAfKategori(kategoriNavn) {
   let dropdownButton = document.getElementById('dropdownButton');
-  dropdownButton.innerHTML = kategoriNavn; // Opdaterer knapteksten med navnet på den valgte kategori
-  dropdownButton.style.backgroundColor = "#ffffff"; // Ændrer baggrundsfarven til hvid, når en kategori er valgt
+  dropdownButton.innerHTML = kategoriNavn; 
+  dropdownButton.style.backgroundColor = "#ffffff"; 
   let dropdown = document.getElementById("myDropdown");
-  dropdown.classList.remove("show"); // Lukker dropdown'en
+  dropdown.classList.remove("show"); 
 }
 
-// Close the dropdown if the user clicks outside of it
+
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
       var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -27,7 +26,7 @@ window.onclick = function(event) {
           var openDropdown = dropdowns[i];
           if (openDropdown.classList.contains('show')) {
               openDropdown.classList.remove('show');
-              valgAfKategori("Alle"); // Nulstil knapteksten til "Alle" når dropdown'en lukkes sammen
+              valgAfKategori("Alle"); 
           }
       }
   }
