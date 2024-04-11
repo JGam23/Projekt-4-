@@ -341,6 +341,7 @@ progress[value]::after {
 
 .profile-name {
   font-family: acumin-pro-extra-condensed, sans-serif;
+  font-weight: bold;
   font-size: 40px;
   color: #000000;
 }
@@ -395,13 +396,12 @@ progress[value]::after {
 
 .streaks-box h2 {
   margin-bottom: 10px;
-  font-size: 40px;
+  font-size: 50px;
   margin: auto;
   margin-bottom: 25px;
-  margin-top: 15px;
+  margin-top: 5px;
   grid-area: title;
   font-family: acumin-pro-extra-condensed, sans-serif;
-  font-weight: normal;
 }
 
 
@@ -442,18 +442,21 @@ progress[value]::after {
   text-align: center; 
   margin-top: 10px; 
   grid-area: text;
-  font-family: acumin-pro-extra-condensed, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 
 .trophy-title {
   text-align: center;
   margin-top: 20px; 
   font-family: acumin-pro-extra-condensed, sans-serif;
+  font-weight: bold;
 }
 
 .trophy-title h1 {
   font-size: 36px;
-  font-weight: normal;
+  font-family: acumin-pro-extra-condensed, sans-serif;
+  font-weight: bold;
 }
 
 .trofae-container {
@@ -486,11 +489,13 @@ progress[value]::after {
   font-size: 18px;
   font-weight: bold;
   grid-area: title;
+  font-family: acumin-pro-extra-condensed, sans-serif;
 }
 
 .trofae-beskrivelse {
   font-size: 14px;
   grid-area: text;
+  font-family: Arial, Helvetica, sans-serif
 }
 
 .fremskridtslinje-container {
