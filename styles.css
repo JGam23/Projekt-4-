@@ -348,10 +348,6 @@ progress[value]::after {
   margin-right: 5px; /* Tilføj lidt afstand mellem valuta-container og fly-ikon */
 }
 
-.fly-ikon {
-  font-size: 20px; /* Juster størrelsen af fly-ikonet efter behov */
-  vertical-align: middle; /* Juster lodret placering af fly-ikonet */
-}
 .valuta-container img {
   vertical-align: middle; /* Linjer billedet med teksten */
   width: 20px; /* Billedets bredde */
@@ -369,25 +365,19 @@ progress[value]::after {
   border-radius: 12px;
   background-color: #f9f9f9;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.streak-counter {
-  position: absolute;
-  top: 20px ;
-  right: 20px;
-  display: flex; /* Ændret til flex */
-  align-items: center; /* Juster lodret justering til bunden */
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows:  auto auto auto;
+  grid-template-areas: 
+  "title img"
+  "table table"
+  "text text";
 }
 
 .streak-number {
   font-size: 4em;
   color: #000000;
   margin-right: 10px;
-}
-  
-.flame-icon {
-   color: orange;
-  font-size: 4em;
 }
 
 .streaks-content {
@@ -398,12 +388,24 @@ progress[value]::after {
   height: 100%; /* Sørger for at indholdet fylder boksen vertikalt */
 }
 
+.streak-image {
+  width: 120px; /* Juster størrelsen efter behov */
+  height: auto; /* Auto-højde for at bevare billedets proportioner */
+  position: absolute; /* Positionér billedet absolut */
+  right: 10px; /* Afstand til højre side af streaks-box */
+  margin: auto;
+  grid-area: img;
+}
 
 .streaks-box h2 {
   margin-bottom: 10px;
   font-family: acumin-pro-extra-condensed, sans-serif;
   font-weight: bold;
   font-size: 40px;
+  margin: auto;
+  margin-bottom: 25px;
+  margin-top: 15px;
+  grid-area: title;
 }
 
 
@@ -412,6 +414,7 @@ progress[value]::after {
   flex-direction: row; 
   justify-content: space-around; 
   flex-wrap: wrap;
+  grid-area: table;
 }
 
 .streaks-table th,
@@ -423,6 +426,7 @@ progress[value]::after {
   height: 30px;
   line-height: 30px;
   border-radius: 50%;
+  margin: auto;
   margin-bottom: 10px; 
 }
 
@@ -441,6 +445,7 @@ progress[value]::after {
   color: #000000;
   text-align: center; 
   margin-top: 10px; 
+  grid-area: text;
 }
 
 .trophy-title {
@@ -458,11 +463,19 @@ progress[value]::after {
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 5px;
+  display: grid;
+    grid-template-columns: 15% auto;
+    grid-template-rows:  auto auto auto;
+    grid-template-areas: 
+    "img title"
+    "img text"
+    "img progress";
 }
 
 .trofae-ikon {
   width: 50px; /* Juster størrelsen efter behov */
   height: auto;
+  grid-area: img;
 }
 
 .trofae-ikon img {
@@ -474,16 +487,19 @@ progress[value]::after {
 .trofae-titel {
   font-size: 18px;
   font-weight: bold;
+  grid-area: title;
 }
 
 .trofae-beskrivelse {
   font-size: 14px;
+  grid-area: text;
 }
 
 .fremskridtslinje-container {
   background-color: #f1f1f1;
   border-radius: 5px;
   display: flex;
+  grid-area: progress;
 }
 
 .fremskridtslinje {
