@@ -374,7 +374,6 @@ progress[value]::after {
   "text text";
 }
 
-<<<<<<< Updated upstream
 .streak-number {
   font-size: 4em;
   color: #000000;
@@ -389,12 +388,6 @@ progress[value]::after {
   height: 100%; /* Sørger for at indholdet fylder boksen vertikalt */
 }
 
-=======
-.streak-counter {
-  display: flex; /* Ændret til flex */
-  align-items: center; /* Juster lodret justering til bunden */
-}
-
 .streak-image {
   width: 120px; /* Juster størrelsen efter behov */
   height: auto; /* Auto-højde for at bevare billedets proportioner */
@@ -403,7 +396,6 @@ progress[value]::after {
   margin: auto;
   grid-area: img;
 }
->>>>>>> Stashed changes
 
 .streaks-box h2 {
   margin-bottom: 10px;
