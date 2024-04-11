@@ -1,7 +1,6 @@
 # {
   margin: 0;
   scroll-behavior: smooth;
-  font-family:'Times New Roman', Times, serif;
 }
 
 
@@ -49,6 +48,7 @@ h1 {
   font-size: 20px;
   margin-bottom: 100px;
   z-index: 100;
+  font-family: acumin-pro-extra-condensed, sans-serif;
 }
 
 .burger-menu {
@@ -303,6 +303,8 @@ progress[value]::after {
   background-color: #CC6A00; /* Mørkere orange ved hover */
 }
 
+/*PROFIL SIDE*/
+
 .Pcontainer {
   max-width: 600px;
   margin: 50px auto;
@@ -338,8 +340,8 @@ progress[value]::after {
 }
 
 .profile-name {
+  font-family: acumin-pro-extra-condensed, sans-serif;
   font-size: 40px;
-  font-weight: bold;
   color: #000000;
 }
 
@@ -374,12 +376,6 @@ progress[value]::after {
   "text text";
 }
 
-.streak-number {
-  font-size: 4em;
-  color: #000000;
-  margin-right: 10px;
-}
-
 .streaks-content {
   display: flex;
   flex-direction: column;
@@ -399,13 +395,13 @@ progress[value]::after {
 
 .streaks-box h2 {
   margin-bottom: 10px;
-  font-family: acumin-pro-extra-condensed, sans-serif;
-  font-weight: bold;
   font-size: 40px;
   margin: auto;
   margin-bottom: 25px;
   margin-top: 15px;
   grid-area: title;
+  font-family: acumin-pro-extra-condensed, sans-serif;
+  font-weight: normal;
 }
 
 
@@ -446,16 +442,18 @@ progress[value]::after {
   text-align: center; 
   margin-top: 10px; 
   grid-area: text;
+  font-family: acumin-pro-extra-condensed, sans-serif;
 }
 
 .trophy-title {
   text-align: center;
   margin-top: 20px; 
+  font-family: acumin-pro-extra-condensed, sans-serif;
 }
 
 .trophy-title h1 {
   font-size: 36px;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 .trofae-container {
