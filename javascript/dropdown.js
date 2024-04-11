@@ -1,21 +1,36 @@
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
+// Funktion til at håndtere klik på dropdown-knappen
 function dropdownKategori() {
-    document.getElementById("myDropdown").classList.toggle("show");
-    document.getElementById('dropdownButton').innerHTML = "Hej"
+  var dropdown = document.getElementById("myDropdown");
+  dropdown.classList.toggle("show");
+  var dropdownButton = document.getElementById('dropdownButton');
+  if (dropdown.classList.contains("show")) {
+      dropdownButton.style.backgroundColor = "#D5802D"; // Ændrer baggrundsfarven til orange
+  } else {
+      dropdownButton.style.backgroundColor = "#ffffff"; // Ændrer baggrundsfarven til hvid, når dropdown'en lukkes
   }
-  
-  // Close the dropdown if the user clicks outside of it
-  window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-      let dropdowns = document.getElementsByClassName("dropdown-content");
-      let i;
-      for (i = 0; i < dropdowns.length; i++) {
-        let openDropdown = dropdowns[i];
-        console.log(openDropdown)
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
+}
+
+// Funktion til at håndtere valg af kategori og opdatering af knaptekst samt lukning af dropdown
+function valgAfKategori(kategoriNavn) {
+  var dropdownButton = document.getElementById('dropdownButton');
+  dropdownButton.innerHTML = kategoriNavn; // Opdaterer knapteksten med navnet på den valgte kategori
+  dropdownButton.style.backgroundColor = "#ffffff"; // Ændrer baggrundsfarven til hvid, når en kategori er valgt
+  var dropdown = document.getElementById("myDropdown");
+  dropdown.classList.remove("show"); // Lukker dropdown'en
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      for (var i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+              valgAfKategori("Alle"); // Nulstil knapteksten til "Alle" når dropdown'en lukkes sammen
+          }
       }
-    }
   }
+}
+
+
