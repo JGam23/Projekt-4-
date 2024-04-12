@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ccs/shoppen.css">
+    <link rel="stylesheet" href="ccs/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+    <script src="javascript/dropdown.js"></script>
+
+    <body>
+        <!-- Header -->
+        <header>
+            <div class="head">
+                SHOP
+                <div class="burger-menu">
+                    <div class="burger-icon">
+                        <img src="images/menu.png" alt="menu ikon">
+                    </div>
+                    <div class="menu">
+                        <a href="profil.html"><i class="fas fa-user"></i> Profil</a>
+                        <a href="shoppen.html"><i class="fas fa-shopping-cart"></i> Shop</a>
+                        <a href="info.html"><i class="fas fa-info-circle"></i> Info</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <main>
+            <!-- Saldo, kurve og favorit -->
+            <div class="toppen">
+                <!-- Container til saldo og point -->
+                <div class="containersaldo">
+                    <p class="saldo">Saldo</p>
+                    <div class="saldopoint">
+                        <img src="images-shop/mont.png" alt="point">
+                        <p class="point">34</p>
+                    </div>
+                </div>
+    
+                <!-- Container til shopping handlinger -->
+                <div class="shopping">
+                    <div class="actions">
+                        <!-- Handling: Ordre -->
+                        <div class="action">
+                            <div class="ordre">
+                                <img src="images-shop/ordre-ikon.png" alt="ordre" class="icon">
+                            </div>
+                            <p class="ordretekst">Ordre</p>
+                        </div>
+    
+                        <!-- Handling: Favoritter -->
+                        <div class="action">
+                            <div class="favorit">
+                                <img src="images-shop/ordre-ikon.png" alt="favoritter" class="icon">
+                            </div>
+                            <p class="farvortitekst">Favoritter</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dropdown kategorier -->
+            <div class="containerdrop">
+                <h2 class="kategori">Kategorier</h2>
+                <div class="dropdown">
+                    <!-- Knappen for dropdown -->
+                    <button id="dropdownButton" onclick="dropdownKategori()" class="dropbtn">Alle</button>
+                    <!-- Dropdown indhold -->
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#" onclick="valgAfKategori('Greenpeace')">Greenpeace</a>
+                        <a href="#" onclick="valgAfKategori('Oceans2clean')">Oceans2clean</a>
+                        <a href="#" onclick="valgAfKategori('WWF')">WWF</a>
+                        <a href="#" onclick="valgAfKategori('Qato fond')">Qato fond</a>
+                        <a href="#" onclick="valgAfKategori('15 juni fonden')">15 juni fonden</a>
+                        <a href="#" onclick="valgAfKategori('T-shirt fra WWF')">T-shirt fra WWF</a>
+                        <a href="#" onclick="valgAfKategori('Lego byggesæt')">Lego byggesæt</a>
+                        <a href="#" onclick="valgAfKategori('Net fra WWf')">Net fra WWF</a>
+                        <a href="#" onclick="valgAfKategori('Drikkeflaske fra WWF')">Drikkeflaske fra WWF</a>
+                        <a href="#" onclick="valgAfKategori('Armbånd fra Oceans2clean')">Armbånd fra Oceans2clean</a>
+                        <a href="#" onclick="valgAfKategori('Iced Latte fra Espresso House')">Iced Latte fra Espresso House</a>
+                        <a href="#" onclick="valgAfKategori('Pilsner fra Carlsberg')">Pilsner fra Carlsberg</a>
+                        <a href="#" onclick="valgAfKategori('Mobilcover fra Dbramante1928')">Mobilcover fra Dbramante1928</a>
+                        <a href="#" onclick="valgAfKategori('Kaffekop fra WWF')">Kaffekop fra WWF</a>
+                    </div>
+                </div>
+                <!-- Angivelse af antal muligheder -->
+                <p class="mulighed">14 muligheder</p>
+            </div>
+
+<!-- Donation galleri -->
+            <div class="tekst-don">
+                <h3>DONÈR</h3>
+            </div>
+            <div class="scroll-container-shop">
+                <!-- Skovbrænd -->
+                <div class="box-shop">
+                    <img src="images-shop/brand-green.jpeg" alt="skovbrærnd" class="background-image">
+                    <div class="content-overlay">
+                        <h3 class="title-shop">Greenpeace</h3>
+                        <!-- Point og tekst -->
+                        <div class="image-container-shop">
+                            <div class="point-box">
+                                <img src="images-shop/mont.png" alt="point">
+                                <span class="point-text">30</span>
+                            </div>
+                        </div>
+                        <!-- Logo -->
+                        <div class="logoer">
+                            <div class="rounded-box">
+                                <img src="images-shop/greenpeace-logo.png" alt="Greenpeace logo">
+                            </div>
+                        </div>
+                        <p class="side-text-shop">Hjælp med at mindske skovbrænd</p>
+                    </div>
+                </div>
+
+                <!-- Skildpade med plastik -->
+                <div class="box-shop">
+                    <img src="images-shop/skildpade.jpeg" alt="skildpade med plastik" class="background-image">
+                    <div class="content-overlay">
+                        <h3 class="title-shop">WWF</h3>
+                        <!-- Point og tekst -->
+                        <div class="image-container-shop">
+                            <div class="point-box">
+                                <img src="images-shop/mont.png" alt="point">
+                                <span class="point-text">20</span>
+                            </div>
+                        </div>
+                        <!-- Logo -->
+                        <div class="logoer">
+                            <div class="rounded-box">
+                                <img src="images-shop/wwf-logo.png" alt="WWF logo">
+                            </div>
+                        </div>
+                        <p class="side-text-shop">Hjælp med at redde skildpadderne</p>
+                    </div>
+                </div>
+
+                <!-- Hest -->
+                <div class="box-shop">
+                    <img src="images-shop/hest.jpeg" alt="hest" class="background-image">
+                    <div class="content-overlay">
+                        <h3 class="title-shop">Qato fonden</h3>
+                        <!-- Point og tekst -->
+                        <div class="image-container-shop">
+                            <div class="point-box">
+                                <img src="images-shop/mont.png" alt="point">
+                                <span class="point-text">15</span>
+                            </div>
+                        </div>
+                        <!-- Logo -->
+                        <div class="logoer">
+                            <div class="rounded-box">
+                                <img src="images-shop/qato-logo.png" alt="Qato fonden logo">
+                            </div>
+                        </div>
+                        <p class="side-text-shop">Hjælp med et bedre hestevelfærd</p>
+                    </div>
+                </div>
+
+                <!-- Plastik -->
+                <div class="box-shop">
+                    <img src="images-shop/plastik.jpeg" alt="plastik" class="background-image">
+                    <div class="content-overlay">
+                        <h3 class="title-shop">Oceans2clean</h3>
+                        <!-- Point og tekst -->
+                        <div class="image-container-shop">
+                            <div class="point-box">
+                                <img src="images-shop/mont.png" alt="point">
+                                <span class="point-text">20</span>
+                            </div>
+                        </div>
+                        <!-- Logo -->
+                        <div class="logoer">
+                            <div class="rounded-box">
+                                <img src="images-shop/oceans2clean-logo.jpeg" alt="Oceans2clean logo">
+                            </div>
+                        </div>
+                        <p class="side-text-shop">Hjælp med at rense havet for plastik</p>
+                    </div>
+                </div>
+
+                <!-- Elefant -->
+                <div class="box-shop">
+                    <img src="images-shop/elefant.jpeg" alt="død elefant" class="background-image">
+                    <div class="content-overlay">
+                        <h3 class="title-shop">WWF</h3>
+                        <!-- Point og tekst -->
+                        <div class="image-container-shop">
+                            <div class="point-box">
+                                <img src="images-shop/mont.png" alt="point">
+                                <span class="point-text">30</span>
+                            </div>
+                        </div>
+                        <!-- Logo -->
+                        <div class="logoer">
+                            <div class="rounded-box">
+                                <img src="images-shop/wwf-logo.png" alt="WWF logo">
+                            </div>
+                        </div>
+                        <p class="side-text-shop">Red dyrene på savannen</p>
+                    </div>
+                </div>
+
+                <!-- Greenpeace -->
+                <div class="box-shop">
+                    <img src="images-shop/vand-greenpeace.jpeg" alt="Greenpeace" class="background-image">
+                    <div class="content-overlay">
+                        <h3 class="title-shop">Greenpeace</h3>
+                        <!-- Point og tekst -->
+                        <div class="image-container-shop">
+                            <div class="point-box">
+                                <img src="images-shop/mont.png" alt="point">
+                                <span class="point-text">10</span>
+                            </div>
+                        </div>
+                        <!-- Logo -->
+                        <div class="logoer">
+                            <div class="rounded-box">
+                                <img src="images-shop/greenpeace-logo.png" alt="Greenpeace logo">
+                            </div>
+                        </div>
+                        <p class="side-text-shop">Støt Greenpeace med deres projekter</p>
+                    </div>
+                </div>
+
+                <!-- Natur -->
+                <div class="box-shop">
+                    <img src="images-shop/natur15junifonden.jpeg" alt="Naturen" class="background-image">
+                    <div class="content-overlay">
+                        <h3 class="title-shop">15 Juni Fonden</h3>
+                        <!-- Point og tekst -->
+                        <div class="image-container-shop">
+                            <div class="point-box">
+                                <img src="images-shop/mont.png" alt="point">
+                                <span class="point-text">10</span>
+                            </div>
+                        </div>
+                        <!-- Logo -->
+                        <div class="logoer">
+                            <div class="rounded-box">
+                                <img src="images-shop/15junifonden-logo.jpeg" alt="15 Juni Fonden logo">
+                            </div>
+                        </div>
+                        <p class="side-text-shop">Red den danske natur</p>
+                    </div>
+                </div>
+
+                <!-- Hund -->
+                <div class="box-shop">
+                    <img src="images-shop/hund.jpeg" alt="hund" class="background-image">
+                    <div class="content-overlay">
+                        <h3 class="title-shop">Qato Fonden</h3>
+                        <!-- Point og tekst -->
+                        <div class="image-container-shop">
+                            <div class="point-box">
+                                <img src="images-shop/mont.png" alt="point">
+                                <span class="point-text">15</span>
+                            </div>
+                        </div>
+                        <!-- Logo -->
+                        <div class="logoer">
+                            <div class="rounded-box">
+                                <img src="images-shop/qato-logo.png" alt="Qato Fonden logo">
+                            </div>
+                        </div>
+                        <p class="side-text-shop">Støt dyr der mistrives i menneskers varetægt</p>
+                    </div>
+                </div>
+            </div>
+
+<!-- Shop produkter galleri -->
+            <div class="tekst-shop">
+                <h3>SHOP</h3>
+            </div>
+            <div class="scroll-container-shop">
+                <!-- T-shirt -->
+                <div class="box-shop">
+                    <img src="images-shop/t-shirt.jpeg" alt="t-shirt WWF" class="background-image">
+                    <div class="content-overlay">
+                        <h3 class="title-shop">WWF</h3>
+                        <div class="image-container-shop">
+                            <div class="point-box">
+                                <img src="images-shop/mont.png" alt="point">
+                                <span class="point-text">80</span>
+                            </div>
+                        </div>
+                        <div class="logoer">
+                            <div class="rounded-box">
+                                <img src="images-shop/wwf-logo.png" alt="WWF logo">
+                            </div>
+                        </div>
+                        <p class="side-text-shop">Klassisk WWF t-shirt</p>
+                    </div>
+                </div>
+                <!-- Lego -->
+                <div class="box-shop">
+                    <img src="images-shop/lego-giraf.jpeg" alt="Lego sæt af en giraf" class="background-image">
+                    <div class="content-overlay">
+                        <h3 class="title-shop">LEGO System A/S</h3>
+                        <div class="image-container-shop">
+                            <div class="point-box">
+                                <img src="images-shop/mont.png" alt="point">
+                                <span class="point-text">150</span>
+                            </div>
+                        </div>
+                        <div class="logoer">
+                            <div class="rounded-box">
+                                <img src="images-shop/lego-logo.png" alt="Lego logo">
+                            </div>
+                        </div>
+                        <p class="side-text-shop">Vilde safaridyr lego sæt</p>
+                    </div>
+                </div>
+                <!-- Net -->
+                <div class="box-shop">
+                    <img src="images-shop/net.jpeg" alt="Net med WWF logo" class="background-image">
+                    <div class="content-overlay">
+                        <h3 class="title-shop">WWF</h3>
+                        <div class="image-container-shop">
+                            <div class="point-box">
+                                <img src="images-shop/mont.png" alt="point">
+                                <span class="point-text">50</span>
+                            </div>
+                        </div>
+                        <div class="logoer">
+                            <div class="rounded-box">
+                                <img src="images-shop/wwf-logo.png" alt="WWF logo">
+                            </div>
+                        </div>
+                        <p class="side-text-shop">Mulepose med Panda logo</p>
+                    </div>
+                </div>
+                <!-- drikkeflaske -->
+                <div class="box-shop">
+                    <img src="images-shop/vandflaske.jpeg" alt="Vandflaske med WWF logo" class="background-image">
+                    <div class="content-overlay">
+                        <h3 class="title-shop">WWF</h3>
+                        <div class="image-container-shop">
+                            <div class="point-box">
+                                <img src="images-shop/mont.png" alt="point">
+                                <span class="point-text">80</span>
+                            </div>
+                        </div>
+                        <div class="logoer">
+                            <div class="rounded-box">
+                                <img src="images-shop/wwf-logo.png" alt="WWF">
+                            </div>
+                        </div>
+                        <p class="side-text-shop">Drikkeflaske</p>
+                    </div>
+                </div>
+                <!-- Armbånd -->
+                <div class="box-shop">
+                    <img src="images-shop/armband.jpeg" alt="armbånd" class="background-image">
+                    <div class="content-overlay">
+                        <h3 class="title-shop">Oceans2clean</h3>
+                        <div class="image-container-shop">
+                            <div class="point-box">
+                                <img src="images-shop/mont.png" alt="point">
+                                <span class="point-text">95</span>
+                            </div>
+                        </div>
+                        <div class="logoer">
+                            <div class="rounded-box">
+                                <img src="images-shop/oceans2clean-logo.jpeg" alt="Oceans2clean logo">
+                            </div>
+                        </div>
+                        <p class="side-text-shop">Indus Base Duo2 Armbånd</p>
+                    </div>
+                </div> 
+                <!-- Iced latte -->
+                <div class="box-shop">
+                    <img src="images-shop/kaffe.jpeg" alt="Iced latte" class="background-image">
+                    <div class="content-overlay">
+                        <h3 class="title-shop">Espresso House</h3>
+                        <div class="image-container-shop">
+                            <div class="point-box">
+                                <img src="images-shop/mont.png" alt="point">
+                                <span class="point-text">40</span>
+                            </div>
+                        </div>
+                        <div class="logoer">
+                            <div class="rounded-box">
+                                <img src="images-shop/espressohouse-logo.png" alt="Espresso House logo">
+                            </div>
+                        </div>
+                        <p class="side-text-shop">Iced latte</p>
+                    </div>
+                </div> 
+                <!-- Carlsberg -->
+                <div class="box-shop">
+                    <img src="images-shop/beer.jpeg" alt="Calsberg øl" class="background-image">
+                    <div class="content-overlay">
+                        <h3 class="title-shop">Carlsberg Breweries A/S</h3>
+                        <div class="image-container-shop">
+                            <div class="point-box">
+                                <img src="images-shop/mont.png" alt="point">
+                                <span class="point-text">30</span>
+                            </div>
+                        </div>
+                        <div class="logoer">
+                            <div class="rounded-box">
+                                <img src="images-shop/carlsberg-logo.png" alt="carlsberg logo">
+                            </div>
+                        </div>
+                        <p class="side-text-shop">Carlsberg pilsner</p>
+                    </div>
+                </div> 
+                <!-- Mobilcover -->
+                <div class="box-shop">
+                    <img src="images-shop/cover.jpeg" alt="Iphone cover" class="background-image">
+                    <div class="content-overlay">
+                        <h3 class="title-shop">Dbramante1928</h3>
+                        <div class="image-container-shop">
+                            <div class="point-box">
+                                <img src="images-shop/mont.png" alt="point">
+                                <span class="point-text">100</span>
+                            </div>
+                        </div>
+                        <div class="logoer">
+                            <div class="rounded-box">
+                                <img src="images-shop/dbramante1928-logo.png" alt="Dbramante1928 logo">
+                            </div>
+                        </div>
+                        <p class="side-text-shop">Mobilcover</p>
+                    </div>
+                </div> 
+                <!-- Kaffekop -->
+                <div class="box-shop">
+                    <img src="images-shop/kop.jpeg" alt="Kaffekop med log" class="background-image">
+                    <div class="content-overlay">
+                        <h3 class="title-shop">WWF</h3>
+                        <div class="image-container-shop">
+                            <div class="point-box">
+                                <img src="images-shop/mont.png" alt="point">
+                                <span class="point-text">35</span>
+                            </div>
+                        </div>
+                    <div class="logoer">
+                        <div class="rounded-box">
+                            <img src="images-shop/wwf-logo.png" alt="WWF logo">
+                        </div>
+                    </div>
+                    <p class="side-text-shop">Kaffekop i glas med WWF logo</p>
+                </div>
+            </div> 
+        </main>
+        <!-- Footer -->
+        <footer>
+            <div class="foot">
+                <a href="indexx.html"><img src="images/home.png" alt="Hjem"></a>
+            </div>
+        </footer>
+        <script src="javascript/burgermenu.js"></script>
+    </body>
+</html>
