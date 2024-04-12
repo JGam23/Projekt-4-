@@ -1,0 +1,452 @@
+# {
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+
+h1 {
+  font-size: 20px;
+  font-weight: lighter;
+  color: black;
+}
+
+.foot {
+  background-color: #D5802D;
+  text-align: center;
+  height: 50px;
+  line-height: 50px; 
+  position: fixed;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px;
+}
+
+.foot a {
+  color: white; 
+  text-decoration: none; 
+  font-weight: bold;
+}
+
+.foot img {
+  max-height: 40px; 
+  vertical-align: middle; 
+}
+
+.head {
+  background-color: #20702F;
+  text-align: center;
+  height: 50px;
+  position: fixed;
+  line-height: 50px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px;
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 100px;
+  z-index: 100;
+  font-family: acumin-pro-extra-condensed, sans-serif;
+}
+
+.burger-menu {
+  float: right;
+  position: relative;
+}
+
+.burger-icon img {
+  width: 30px;
+  cursor: pointer;
+  margin-right: 15px;
+  top:15px;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: #20702F;
+  color: #ffffff;
+  width: 150px;
+  z-index: 1;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  background-color: #D5802D;
+}
+
+.active {
+  background-color: #20702F;
+  display: block;
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-bottom: 75px;
+}
+.text {
+  width: 80%; 
+  text-align: left; 
+}
+
+.box2 {
+  width: 90%;
+  height: 150px;
+  border:none;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Til at skjule eventuelt overskydende indhold */
+}
+
+.box2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Til at skalere billedet, så det passer til boksen uden at miste proportioner */
+  border-radius: 10px;
+  opacity: 0.5;
+}
+
+progress[value] {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 20px;
+  width: 300px;
+  margin-top: 50px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+progress[value]::-webkit-progress-value {
+  background: #D5802D; /* Farven for den fyldte del af progress baren */
+  border-radius: 10px;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+progress[value]::-moz-progress-bar {
+  background: #D5802D; /* Farven for den fyldte del af progress baren (for Firefox) */
+  border-radius: 10px;
+}
+
+progress[value]::after {
+  content: attr(value) '%'; /* Indsæt procentdelen som indhold */
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translate(-50%, -50%);
+  color: white; /* Farven på teksten */
+  font-weight:bold;
+}
+
+.round-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px; 
+  height: 50px; 
+  border-radius: 50%; 
+  overflow: hidden; /* Skjuler eventuelt overskydende indhold */
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  background-color: #fff;
+}
+
+.round-button img {
+  max-width: 40px; 
+  max-height: 40px;
+  width: auto;
+  height: auto;
+}
+
+.popup-container {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff; /* Hvid baggrund */
+  padding: 20px;
+  border-radius: 10px; /* Runde kanter */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  text-align: center;
+  border: 2px solid #D5802D; /* Tynd orange kant */
+  width: 300px;
+}
+
+.popup-container img {
+  display: block;
+  margin: 0 auto; /* Centreret billede */
+  max-width: 70%;
+  height: 70%;
+  margin-bottom: 10px;
+}
+
+.popup-container h2 {
+  margin-bottom: 10px;
+  color: #000; /* Sort skriftfarve til overskrift */
+}
+
+.popup-container .popup-button {
+  display: inline-block;
+  padding: 10px 20px; /* Lidt mere padding for at gøre knappen større */
+  background-color: #D5802D; /* Orange baggrundsfarve */
+  color: #fff; /* Hvid skriftfarve */
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.popup-container .popup-button:hover {
+  background-color: #CC6A00; /* Mørkere orange ved hover */
+}
+
+/*PROFIL SIDE*/
+
+.Pcontainer {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  flex-direction: column; /* Juster indholdets retning til kolonne */
+  text-align: center; /* Centrer indholdet */
+}
+
+.profile-details {
+  margin-top: 10px; /* Afstand mellem profilbillede og profiloplysninger */
+}
+
+.horizontal-line {
+  width: 80%; /* Juster bredden efter behov */
+  margin: 10px auto; /* Centrer vandret linje og tilføj lidt afstand over og under */
+  border: none;
+  border-top: 1px solid #ddd; /* Stil og farve af vandret linje */
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.profile-name {
+  font-family: acumin-pro-extra-condensed, sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  color: #000000;
+}
+
+.valuta-container {
+  display: inline-block; /* Gør valuta-containeren til en inline-block for at placere det på samme linje */
+  margin-right: 5px; /* Tilføj lidt afstand mellem valuta-container og fly-ikon */
+}
+
+.valuta-container img {
+  vertical-align: middle; /* Linjer billedet med teksten */
+  width: 20px; /* Billedets bredde */
+}
+.valuta-container .mønt-tæller {
+  font-family: acumin-pro-extra-condensed, sans-serif;
+  font-weight: bold; /* Fed skrift for møntantal */
+}
+
+
+.streaks-box {
+  position: relative; /* Gør det muligt at positionere streak-counter absolut */
+  margin-top: 10px;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows:  auto auto auto;
+  grid-template-areas: 
+  "title img"
+  "table table"
+  "text text";
+}
+
+.streaks-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Sørger for at indholdet fylder boksen vertikalt */
+}
+
+.streak-image {
+  width: 120px; /* Juster størrelsen efter behov */
+  height: auto; /* Auto-højde for at bevare billedets proportioner */
+  position: absolute; /* Positionér billedet absolut */
+  right: 10px; /* Afstand til højre side af streaks-box */
+  margin: auto;
+  grid-area: img;
+}
+
+.streaks-box h2 {
+  margin-bottom: 10px;
+  font-size: 50px;
+  margin: auto;
+  margin-bottom: 25px;
+  margin-top: 5px;
+  grid-area: title;
+  font-family: acumin-pro-extra-condensed, sans-serif;
+}
+
+
+.streaks-table {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-around; 
+  flex-wrap: wrap;
+  grid-area: table;
+}
+
+.streaks-table th,
+.streaks-table td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  margin: auto;
+  margin-bottom: 10px; 
+}
+
+.monday, .tuesday, .wednesday, .thursday {
+  background-color: orange;
+  color: white;
+}
+
+.friday, .saturday, .sunday {
+  background-color: white;
+  color: black;
+}
+
+.streaks-text {
+  font-size: 14px;
+  color: #000000;
+  text-align: center; 
+  margin-top: 10px; 
+  grid-area: text;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.trophy-title {
+  text-align: center;
+  margin-top: 20px; 
+  font-family: acumin-pro-extra-condensed, sans-serif;
+  font-weight: bold;
+}
+
+.trophy-title h1 {
+  font-size: 36px;
+  font-family: acumin-pro-extra-condensed, sans-serif;
+  font-weight: bold;
+}
+
+.trofae-container {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: grid;
+    grid-template-columns: 15% auto;
+    grid-template-rows:  auto auto auto;
+    grid-template-areas: 
+    "img title"
+    "img text"
+    "img progress";
+}
+
+.trofae-ikon {
+  width: 50px; /* Juster størrelsen efter behov */
+  height: auto;
+  grid-area: img;
+}
+
+.trofae-ikon img {
+  width: 100%; /* Fylder hele pladsen i .trofae-ikon containeren */
+  height: auto;
+}
+
+
+.trofae-titel {
+  font-size: 18px;
+  font-weight: bold;
+  grid-area: title;
+  font-family: acumin-pro-extra-condensed, sans-serif;
+}
+
+.trofae-beskrivelse {
+  font-size: 14px;
+  grid-area: text;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+.fremskridtslinje-container {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  display: flex;
+  grid-area: progress;
+}
+
+.fremskridtslinje {
+  height: 10px;
+  width: 80%;
+  background-color: #D5802D;
+  border-radius: 5px;
+  margin: auto 0px;
+  margin-right: auto;
+}
+
+.fremskridtslinje span {
+  position: absolute; /* Absolut position for at placere span inden i linjen */
+  right: 5px; /* Afstand til højre for linjen */
+  top: 50%; /* Centrerer vertikalt */
+  transform: translateY(-50%); /* Justerer position baseret på linjens højde */  
+  margin: auto; 
+}
+
+
+
+
+
+
+
+
+
+  
+ 
