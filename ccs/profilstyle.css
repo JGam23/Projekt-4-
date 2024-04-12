@@ -1,0 +1,192 @@
+/*PROFIL SIDE*/
+.Pcontainer {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  .profile-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Juster indholdets retning til kolonne */
+    text-align: center; /* Centrer indholdet */
+  }
+  .profile-details {
+    margin-top: 10px; /* Afstand mellem profilbillede og profiloplysninger */
+  }
+  .horizontal-line {
+    width: 80%; /* Juster bredden efter behov */
+    margin: 10px auto; /* Centrer vandret linje og tilføj lidt afstand over og under */
+    border: none;
+    border-top: 1px solid #ddd; /* Stil og farve af vandret linje */
+  }
+  .profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  .profile-name {
+    font-family: acumin-pro-extra-condensed, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: #000000;
+  }
+  .valuta-container {
+    display: inline-block; /* Gør valuta-containeren til en inline-block for at placere det på samme linje */
+    margin-right: 5px; /* Tilføj lidt afstand mellem valuta-container og fly-ikon */
+  }
+  .valuta-container img {
+    vertical-align: middle; /* Linjer billedet med teksten */
+    width: 20px; /* Billedets bredde */
+  }
+  .valuta-container .mønt-tæller {
+    font-family: acumin-pro-extra-condensed, sans-serif;
+    font-weight: bold; /* Fed skrift for møntantal */
+  }
+  
+  .streaks-box {
+    position: relative; /* Gør det muligt at positionere streak-counter absolut */
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows:  auto auto auto;
+    grid-template-areas: 
+    "title img"
+    "table table"
+    "text text";
+  }
+  .streaks-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Sørger for at indholdet fylder boksen vertikalt */
+  }
+  .streak-image {
+    width: 120px; /* Juster størrelsen efter behov */
+    height: auto; /* Auto-højde for at bevare billedets proportioner */
+    position: absolute; /* Positionér billedet absolut */
+    right: 10px; /* Afstand til højre side af streaks-box */
+    margin: auto;
+    grid-area: img;
+  }
+  .streaks-box h2 {
+    margin-bottom: 10px;
+    font-size: 50px;
+    margin: auto;
+    margin-bottom: 25px;
+    margin-top: 5px;
+    grid-area: title;
+    font-family: acumin-pro-extra-condensed, sans-serif;
+  }
+  
+  .streaks-table {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around; 
+    flex-wrap: wrap;
+    grid-area: table;
+  }
+  .streaks-table th,
+  .streaks-table td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 10px; 
+  }
+  .monday, .tuesday, .wednesday, .thursday {
+    background-color: orange;
+    color: white;
+  }
+  .friday, .saturday, .sunday {
+    background-color: white;
+    color: black;
+  }
+  .streaks-text {
+    font-size: 14px;
+    color: #000000;
+    text-align: center; 
+    margin-top: 10px; 
+    grid-area: text;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  .trophy-title {
+    text-align: center;
+    margin-top: 20px; 
+    font-family: acumin-pro-extra-condensed, sans-serif;
+    font-weight: bold;
+  }
+  .trophy-title h1 {
+    font-size: 36px;
+    font-family: acumin-pro-extra-condensed, sans-serif;
+    font-weight: bold;
+  }
+  .trofae-container {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: grid;
+      grid-template-columns: 15% auto;
+      grid-template-rows:  auto auto auto;
+      grid-template-areas: 
+      "img title"
+      "img text"
+      "img progress";
+  }
+  .trofae-ikon {
+    width: 50px; /* Juster størrelsen efter behov */
+    height: auto;
+    grid-area: img;
+  }
+  .trofae-ikon img {
+    width: 100%; /* Fylder hele pladsen i .trofae-ikon containeren */
+    height: auto;
+  }
+  
+  .trofae-titel {
+    font-size: 18px;
+    font-weight: bold;
+    grid-area: title;
+    font-family: acumin-pro-extra-condensed, sans-serif;
+  }
+  .trofae-beskrivelse {
+    font-size: 14px;
+    grid-area: text;
+    font-family: Arial, Helvetica, sans-serif
+  }
+  .fremskridtslinje-container {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    display: flex;
+    grid-area: progress;
+  }
+  .fremskridtslinje {
+    height: 10px;
+    width: 80%;
+    background-color: #D5802D;
+    border-radius: 5px;
+    margin: auto 0px;
+    margin-right: auto;
+  }
+  .fremskridtslinje span {
+    position: absolute; /* Absolut position for at placere span inden i linjen */
+    right: 5px; /* Afstand til højre for linjen */
+    top: 50%; /* Centrerer vertikalt */
+    transform: translateY(-50%); /* Justerer position baseret på linjens højde */  
+    margin: auto; 
+  }
+  
