@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const popupButton = document.getElementById("popupButton");
 
     const popupContent = {
-        image: "images/wwf panda.png",
+        image: "images/wwf-panda.png",
         title: "HJÆLP DYRENE I DAG",
         link: "https://wwf.dk/kaemper-for/"
     };
