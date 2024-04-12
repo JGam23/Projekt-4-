@@ -1,0 +1,320 @@
+/* Shoppen */
+
+/* SHOPPEN UNDER SIDE*/
+
+.toppen {
+    display: flex;
+    justify-content: space-between; /* Placerer elementerne i header i hver sin side */
+    align-items: center;
+  }
+
+/* Saldo i toppen */
+
+.containersaldo {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 5px;
+  }
+  
+  .saldo {
+    margin-right: 5px;
+    font-size: 12px;
+    color: #707070;
+  }
+  
+  .saldopoint {
+    display: flex;
+    align-items: center;
+  }
+  
+  .saldopoint img {
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .point {
+    margin: 0;
+    font-size: 12px;
+    color: #707070;
+  }
+  
+  /* Shopping */
+  
+  .shopping {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 5px;
+  }
+  
+  .actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .action {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .icon {
+    width: 40px;
+    height: 30px;
+    margin-top: 70px;
+  }
+  
+  .ordretekst{
+    margin: 0;
+    font-size: 12px;
+    color: #707070;
+  }
+  
+  .farvortitekst{
+    margin: 0;
+    font-size: 12px;
+    color: #707070;
+  }
+  
+  
+  /* Dropdown kategorier */
+  
+  .containerdrop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+  
+  
+  .dropbtn {
+    background-color: #ffffff;
+    color: #707070;
+    padding: 15px;
+    font-size: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+    width: 300px; 
+   
+    display: flex; 
+    align-items: center;
+    border-radius: 5px;
+    text-align: left;
+   
+  }
+  
+  .dropbtn::after {
+    content: "▼"; 
+    margin-left: 5px; 
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    right: 10px; 
+    color: #707070; 
+  }
+  
+  .dropdown {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .dropdown-content {
+    display: none;
+    background-color: #ffffff;
+    min-width: 300px;
+    box-shadow: 0px 10px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    position: absolute;
+    top: 100%;
+    border-radius: 5px;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 12px;
+  }
+  
+  .dropdown-content a:hover {color: #D5802D;}
+  
+  
+  .dropdown:hover .dropbtn {
+    background-color: #D5802D;
+    color: black;
+  }
+  
+  .dropbtn:hover::after {
+    color: black; 
+  }
+  
+  .kategori {
+    margin-bottom: 8px;
+    margin-right: 230px;
+    font-size: 15px;
+  }
+  
+  .mulighed {
+    margin-right: 235px;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #707070;
+  }
+  
+  .dropdown a:hover 
+  {background-color: #ffffff;
+  }
+  
+  .show 
+  {display: block;
+  }
+
+  /* Billede galleri - slide */
+
+.tekst-don{
+    margin-left: 5px;
+    font-size: 15px;
+  }
+
+.tekst-shop{
+    margin-left: 5px;
+    margin-top: 0;
+    font-size: 15px;
+  }
+ 
+  .scroll-container-shop {
+    overflow: auto;
+    white-space: nowrap;
+  }
+  
+  .scroll-container-shop img {
+    width: auto;
+    height: 200px; 
+    margin-left: 5px;
+    border-radius: 5px;
+  }
+  
+
+  .tekst-donation {
+    margin-top: 100px;
+    margin-left: 5px;
+    font-size: 15px;
+  }
+
+  
+  .box-shop {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .background-image {
+    width: auto;
+    height: 200px;
+    border-radius: 5px;
+    margin-left: 5px;
+  }
+  
+  .content-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  
+  .title-shop {
+    margin-top: 20px;
+    font-size: 15px;
+    color: white; 
+    position: absolute;
+    bottom: 22px; 
+    left: 0;
+    width: 100%;
+    text-align: left;
+    padding: 0 60px; 
+  }
+  
+  .side-text-shop {
+    margin-top: 2px;
+    font-size: 10px;
+    color: white; 
+    position: absolute;
+    bottom: 15px; 
+    left: 0;
+    width: 100%;
+    text-align: left;
+    padding: 0 60px; 
+  }
+  
+  .image-container-shop {
+    margin-top: 10px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: 35px; 
+    height: 20px; 
+    background-color: white; 
+    box-sizing: border-box; 
+    border-radius: 15px;
+    border: 1px solid #D5802D;
+  }
+  
+  .image-container-shop img{
+    width: 20px;
+    height: 20px;
+  }
+  
+  .point-box {
+    display: flex;
+    align-items: center;
+  }
+  
+  .point-box img {
+    width: 12px;
+    height: 12px;
+    margin-left: 4px;
+    margin-top: 3px;
+  }
+  
+  .point-text {
+    margin-left: 3px; 
+    font-size: 8px;
+    margin-top: 3px;
+  }
+  
+  
+  .logoer {
+    margin-top: 5px;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+  }
+  
+  .rounded-box {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    overflow: hidden; 
+  }
+  
+  .rounded-box img {
+    width: 70%;
+    height: 70%;
+    margin-top: 5px;
+    margin-left: 1px;
+    object-fit: cover; 
+  } 
+
