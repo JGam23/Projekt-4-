@@ -1,7 +1,6 @@
 # {
   margin: 0;
   scroll-behavior: smooth;
-  font-family:'Times New Roman', Times, serif;
 }
 
 h1 {
@@ -44,90 +43,11 @@ h1 {
   width: 100%;
   padding: 5px;
   color: #fff;
-  font-size: 20px;
-  margin-bottom: 100px;
-}
-
-.circle {
-  text-align: center;
-  position: fixed;
-  left: 50%;
-  top: 150px;
-  transform: translate(-50%, -50%);
-}
-
-.circle img {
-  border-radius: 50%; /* Gør billedet rundt */
-  width: 150px; /* Juster størrelsen på billedet efter behov */
-  height: 150px;
-}
-
-.scroll-menu {
-  width: 100%;
-  overflow-x: auto;
-  white-space: nowrap;
-  margin-top: 400px;
-}
-
-.box {
-  display: inline-block;
-  width: 150px;
-  height: auto;
-  background-color: #E0DECC;
-  margin: 5px;
-  color: #63703A;
-  border-radius: 5px;
-  position: relative;
-}
-
-.title {
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  margin: 0;
-  font-size: 20px;
-}
-
-.image-container {
-  text-align: left;
-}
-
-.box img {
-  width: 50px;
-  height: 50px;
-  margin-top: 25px;
-  right: 75%;
-  text-align: left;
-}
-
-.side-text {
-  font-size: 10px;
-  text-align: right;
-}
-
-.container {
-  text-align: center;
-  margin-top: 50px;
-}
-
-.knap{
-  background-color: #D5802D;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 20px;
-  cursor: pointer;
-  width: 150px;
-}
-
-.txt-box1 {
-  margin-top: 30px;
   font-size: 30px;
-  color: 000000;
-  text-align: center;
-  font: Acumin Pro ExtraCondensed; 
+  margin-bottom: 100px;
+  font-family: acumin-pro-extra-condensed, sans-serif;
 }
+
 
 .container2 {
   display: flex;
@@ -140,7 +60,6 @@ h1 {
   width: 80%; /* Justerer bredden efter behov */
   text-align: left; /* Placering af tekst til venstre */
 }
-
 
 .box2 {
   width: 90%;
